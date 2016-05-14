@@ -1,0 +1,76 @@
+\begin{titlepage}
+
+\begin{center}
+
+%% Insert the logo at the bottom of the page.
+\begin{tikzpicture}[remember picture,overlay]
+    \node at (current page.south)[anchor=south,inner sep=25pt]{
+        \includegraphics[scale=.1]{cover/logo}
+    };
+\end{tikzpicture}
+
+%% Extra whitespace at the top.
+\vspace*{2\bigskipamount}
+
+%% Print the title in cyan.
+{\makeatletter
+\titlestyle\color{tudelft-cyan}\Huge\@title
+\makeatother}
+
+%% Print the optional subtitle in black.
+{\makeatletter
+\ifx\@subtitle\undefined\else
+    \bigskip
+    \titlefont\titleshape\LARGE\@subtitle
+\fi
+\makeatother}
+
+\bigskip
+\bigskip
+
+by
+
+\bigskip
+\bigskip
+
+%% Print the name of the author.
+{\makeatletter
+	\titlefont\Large\bfseries{2016's}
+	\makeatother}
+{\makeatletter
+\titlefont\Large\bfseries\@author
+\makeatother}
+
+\vfill
+
+at TMI - The Episcopal School of Texas,
+
+%to be defended publicly on Tuesday January 1, 2013 at 10:00 AM.
+
+\vfill
+
+\begin{tabular}{llr}
+%% Add additional information here, per faculty requirements, e.g
+%    Student number: & 1234567 \\
+%    Project duration: & \multicolumn{2}{l}{March 1, 2012 -- January 1, 2013} \\
+
+    Students:
+        & Cameron Crenwelge, & \nth{4} period \\
+        & Tori Flener, & \nth{1} period \\
+        & Sophia Kennedy, & \nth{1} period \\
+        & Armando Merlo, & \nth{1} period \\
+        & Darby Moran, & \nth{1} period \\
+        & Allie Prado, & \nth{4} period \\
+        & Umer Salman, & \nth{4} period \\
+        & Renee Umsted, & \nth{1} period \\
+        & Pauline Wholey, & \nth{1} period
+\end{tabular}
+
+\bigskip
+\bigskip
+%\emph{This thesis is confidential and cannot be made public until December 31, 2013.}
+An electronic summary of this paper is available at \url{http://url.com/}.
+\end{center}
+
+\end{titlepage}
+
