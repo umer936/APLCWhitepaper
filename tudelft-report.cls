@@ -17,6 +17,8 @@
 
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
+
+\RequirePackage{float}
 %% English is the default language, but this can be changed to Dutch by
 %% specifying the 'dutch' option to the document class.
 \if@dutch
