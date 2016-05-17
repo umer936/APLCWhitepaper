@@ -213,7 +213,7 @@
 \setlength\@cover@spinewidth{0.375in}
 %% Width and height of the boxes on the front and back cover.
 \newlength\@cover@frontboxwidth
-\setlength\@cover@frontboxwidth{4.375in}
+\setlength\@cover@frontboxwidth{4.5196in}
 \newlength\@cover@frontboxheight
 \setlength\@cover@frontboxheight{2.1875in}
 \newlength\@cover@fronttextwidth
@@ -221,7 +221,7 @@
 \newlength\@cover@backboxwidth
 \setlength\@cover@backboxwidth{4.375in}
 \newlength\@cover@backboxheight
-\setlength\@cover@backboxheight{2.1875in}
+\setlength\@cover@backboxheight{2.5in}
 \newlength\@cover@backtextwidth
 \newlength\@cover@backtextheight
 %% Position on the front cover where the corner of both boxes meet.
@@ -355,7 +355,7 @@
         %% Print the affiliation.
         \ifx\@affiliation\undefined\else
             \node at (back bottom right)[rotate=90,anchor=south west,inner sep=\@cover@margin]{
-                \tudsffamily\color{tudelft-white}\huge\@affiliation
+                \tudsffamily\color{tudelft-white}\@affiliation
             };
         \fi
         \ifKV@cover@back\ifx\@cover@text\undefined\else
