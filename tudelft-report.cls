@@ -19,6 +19,9 @@
 \RequirePackage{amssymb}
 
 \RequirePackage{float}
+
+\newcommand{\bibent}{\noindent \hangindent 40pt}
+\newenvironment{workscited}{\newpage {\centering Works Cited\\}}{\newpage}
 %% English is the default language, but this can be changed to Dutch by
 %% specifying the 'dutch' option to the document class.
 \if@dutch
@@ -162,12 +165,15 @@
 \definecolor{tudelft-sky-blue}{cmyk}{0.45,0,0.06,0.06}
 \definecolor{tudelft-lavendel}{cmyk}{0.45,0.2,0,0.07}
 \definecolor{tudelft-orange}{cmyk}{0.02,0.56,0.84,0}
+\definecolor{TMI-orange}{cmyk}{0,0.7,1,0}
+\definecolor{TMI-search-orange}{cmyk}{0,0.56,0.86,0.12}
+\definecolor{TMI-mobile-bar}{cmyk}{0,0.41,0.88,0.03}
 \definecolor{tudelft-warm-purple}{cmyk}{0.58,1,0,0.02}
 \definecolor{tudelft-fuchsia}{cmyk}{0.19,1,0,0.19}
 \definecolor{tudelft-bright-green}{cmyk}{0.36,0,1,0}
 \definecolor{tudelft-yellow}{cmyk}{0.02,0,0.54,0}
 
-%% Use TU Delft cyan as the color for titles, unless the 'print' option is
+%% Use TU Delft orange as the color for titles, unless the 'print' option is
 %% specified.
 \if@print
     \colorlet{title}{black}
@@ -349,7 +355,7 @@
         %% Print the affiliation.
         \ifx\@affiliation\undefined\else
             \node at (back bottom right)[rotate=90,anchor=south west,inner sep=\@cover@margin]{
-                \tudsffamily\color{tudelft-white}\@affiliation
+                \tudsffamily\color{tudelft-white}\huge\@affiliation
             };
         \fi
         \ifKV@cover@back\ifx\@cover@text\undefined\else
