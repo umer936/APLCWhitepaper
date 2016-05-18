@@ -22,6 +22,8 @@
 
 \newcommand{\bibent}{\noindent \hangindent 40pt}
 \newenvironment{workscited}{\newpage {\centering Works Cited\\}}{\newpage}
+\newenvironment{imagescited}{\newpage {\centering Images Cited\\}}{\newpage}
+\newenvironment{tablescited}{\newpage {\centering Tables Cited\\}}{\newpage}
 %% English is the default language, but this can be changed to Dutch by
 %% specifying the 'dutch' option to the document class.
 \if@dutch
@@ -31,7 +33,8 @@
     %% the title page.
     \RequirePackage[dutch,english]{babel}
 \fi
-\RequirePackage[nooneline,footnotesize,hypcap=false]{caption}
+\RequirePackage[nooneline,footnotesize]{caption}
+\RequirePackage{multicol}
 \RequirePackage{fancyhdr}
 \RequirePackage[flushmargin,hang]{footmisc}
 \RequirePackage{ifpdf}
