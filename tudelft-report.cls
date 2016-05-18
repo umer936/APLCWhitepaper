@@ -31,7 +31,7 @@
     %% the title page.
     \RequirePackage[dutch,english]{babel}
 \fi
-\RequirePackage[nooneline,footnotesize]{caption}
+\RequirePackage[nooneline,footnotesize,hypcap=false]{caption}
 \RequirePackage{fancyhdr}
 \RequirePackage[flushmargin,hang]{footmisc}
 \RequirePackage{ifpdf}
