@@ -19,6 +19,7 @@
 \RequirePackage{amssymb}
 
 \RequirePackage{float}
+\usepackage{setspace}
 
 \newcommand{\bibent}{\noindent \hangindent 40pt}
 \newenvironment{workscited}{\newpage {\centering Works Cited\\}}{\newpage}
